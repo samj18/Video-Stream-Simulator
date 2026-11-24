@@ -1,0 +1,21 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+  application:
+    name: video-stream-simulator
+
+streamsim:
+  rtsp-port: 8554
+  rtp-port: 5004
+  http-port: 8080
+  rtsp-path: live
+  fps: 25
+  bitrate-kbps: 2000
+  rtp-max-payload: 1200
+  rtp-destination: 127.0.0.1
+
+logging:
+  level:
+    root: INFO
+    com.streamsim: INFO

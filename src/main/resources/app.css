@@ -1,0 +1,98 @@
+/* Video Stream Simulator theme: background #061228, buttons #5b3df5 */
+
+.root {
+    -fx-base: #0c1d3d;
+    -fx-background: #061228;
+    -fx-control-inner-background: #0a1a36;
+    -fx-control-inner-background-alt: #0c1d3d;
+    -fx-accent: #5b3df5;
+    -fx-focus-color: #5b3df5;
+    -fx-faint-focus-color: #5b3df533;
+    -fx-text-base-color: #e8ecf6;
+    -fx-font-size: 13px;
+    -fx-background-color: #061228;
+}
+
+.label { -fx-text-fill: #e8ecf6; }
+.label.section-title { -fx-font-weight: bold; -fx-text-fill: #aab6ff; -fx-padding: 10 0 0 0; }
+.label.status-label { -fx-text-fill: #8fa0c4; }
+
+/* ---- buttons: #5b3df5 ---- */
+.button {
+    -fx-background-color: #5b3df5;
+    -fx-background-insets: 0;
+    -fx-background-radius: 6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 7 18 7 18;
+    -fx-cursor: hand;
+}
+.button:hover   { -fx-background-color: #7358ff; }
+.button:pressed { -fx-background-color: #4a2fd6; }
+.button:focused { -fx-background-color: #5b3df5; -fx-background-insets: 0; }
+.button:default { -fx-background-color: #5b3df5; }
+.button:disabled { -fx-opacity: 0.4; }
+
+/* ---- tabs ---- */
+.tab-pane > .tab-header-area > .tab-header-background { -fx-background-color: #061228; }
+.tab-pane > .tab-content-area { -fx-background-color: #061228; }
+.tab-pane .tab { -fx-background-color: #0c1d3d; -fx-background-radius: 6 6 0 0; -fx-padding: 4 14 4 14; }
+.tab-pane .tab:selected { -fx-background-color: #5b3df5; }
+.tab-pane .tab .tab-label { -fx-text-fill: #aab6ff; -fx-font-weight: bold; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: white; }
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator { -fx-border-color: transparent; }
+
+/* ---- inputs ---- */
+.text-field, .text-area, .combo-box-base, .spinner {
+    -fx-background-color: #0a1a36;
+    -fx-background-radius: 5;
+    -fx-border-color: #1d3563;
+    -fx-border-radius: 5;
+    -fx-text-fill: #e8ecf6;
+    -fx-prompt-text-fill: #6b7fa8;
+}
+.text-field:focused, .text-area:focused, .combo-box-base:focused, .spinner:focused { -fx-border-color: #5b3df5; }
+.combo-box-base .text-field, .spinner .text-field { -fx-background-color: transparent; -fx-border-color: transparent; }
+.text-area .content { -fx-background-color: #0a1a36; }
+.text-area { -fx-font-family: "Monospaced"; }
+.combo-box-base .arrow, .spinner .increment-arrow, .spinner .decrement-arrow { -fx-background-color: #aab6ff; }
+.combo-box-base > .arrow-button, .spinner .increment-arrow-button, .spinner .decrement-arrow-button { -fx-background-color: transparent; }
+.combo-box-popup > .list-view { -fx-background-color: #0a1a36; -fx-border-color: #1d3563; }
+.combo-box-popup .list-cell { -fx-background-color: #0a1a36; -fx-text-fill: #e8ecf6; }
+.combo-box-popup .list-cell:hover, .combo-box-popup .list-cell:filled:selected { -fx-background-color: #5b3df5; -fx-text-fill: white; }
+
+.check-box { -fx-text-fill: #e8ecf6; }
+.check-box .box { -fx-background-color: #0a1a36; -fx-border-color: #1d3563; -fx-border-radius: 3; -fx-background-radius: 3; }
+.check-box:selected .box { -fx-background-color: #5b3df5; -fx-border-color: #5b3df5; }
+.check-box:selected .mark { -fx-background-color: white; }
+
+.separator .line { -fx-border-color: #1d3563; -fx-border-width: 1 0 0 0; }
+.scroll-bar { -fx-background-color: #061228; }
+.scroll-bar .thumb { -fx-background-color: #1d3563; -fx-background-radius: 4; }
+.scroll-bar .increment-button, .scroll-bar .decrement-button { -fx-background-color: transparent; -fx-padding: 0; }
+.tooltip { -fx-background-color: #0c1d3d; -fx-text-fill: #e8ecf6; }
+
+/* ---- video surface ---- */
+.video-pane { -fx-background-color: #020a1a; -fx-background-radius: 8; -fx-border-color: #1d3563; -fx-border-radius: 8; }
+.video-pane .label { -fx-text-fill: #6b7fa8; -fx-font-size: 14px; }
+
+/* ---- dialogs ---- */
+.dialog-pane { -fx-background-color: #061228; }
+.dialog-pane > .content.label { -fx-text-fill: #e8ecf6; }
+.dialog-pane > .button-bar > .container { -fx-background-color: #061228; }
+
+/* ---- slider (player bar) ---- */
+.slider .track {
+    -fx-background-color: #1a2d57;
+    -fx-background-radius: 3;
+    -fx-pref-height: 6;
+}
+.slider .thumb {
+    -fx-background-color: #5b3df5;
+    -fx-background-radius: 10;
+    -fx-pref-width: 14;
+    -fx-pref-height: 14;
+}
+.slider:hover .thumb {
+    -fx-background-color: #7358ff;
+}
